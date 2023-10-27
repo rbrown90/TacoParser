@@ -38,7 +38,7 @@ namespace LoggingKata.Test
 
 
         [Theory]//TODO: Create a test ShouldParseLatitude
-        [InlineData("30.731386, -86.566652, Taco Bell Crestvie...", -86.566652)]
+        [InlineData("30.731386, -86.566652, Taco Bell Crestvie...", 30.731386)]
         public void ShouldParseLatitude(string line, double expected)
         {
             var latitude = new TacoParser();
